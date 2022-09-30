@@ -65,11 +65,23 @@ p.subtitle {
     line-height: 14px;
   }
 
+  .is-three-quarters.is-print ul li {
+    line-height: 18px;
+  }
+
   .image {
     width: 100px !important;
   }
 
   .pagebreak {
     margin-top: 90px;
+  }
+
+  .is-offset-4 {
+    margin-left: 40px !important;
+  }
+
+  .timeline .timeline-item::before {
+    background-color: transparent;
   }
 }
