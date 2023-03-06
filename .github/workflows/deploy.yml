@@ -14,13 +14,11 @@ jobs:
           cache: 'npm'
       - run: npm install
       - run: npm run build
-
-      - name: rsync build
-        uses: burnett01/rsync-deployments@5.2.1
+      - uses: burnett01/rsync-deployments@5.2.1
         with:
           switches: -avzr --delete
           path: build/
-          remote_path: docs/
+          remote_path: /home/${{ secrets.DEPLOY_USER }}/docs/
           remote_host: ${{ secrets.DEPLOY_HOST }}
           remote_user: ${{ secrets.DEPLOY_USER }}
           remote_key: ${{ secrets.DEPLOY_KEY }}
