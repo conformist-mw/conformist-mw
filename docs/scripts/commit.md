@@ -18,7 +18,7 @@ chmod +x ~/.local/bin/git-commit
 ### Usage example
 
  ```shell
- git-commit --date 2023-01-01 --message "git commit message"
+ git-commit 2023-01-01 "git commit message"
  ```
 
  ### Script
@@ -34,7 +34,9 @@ from random import randint
 
 
 def get_parser():
-    parser = argparse.ArgumentParser()
+    parser = argparse.ArgumentParser(
+        description="Example: git-commit 2020-12-29 'git commit message'",
+    )
     parser.add_argument(
         'date',
         type=lambda s: datetime.strptime(s, '%Y-%m-%d'),
