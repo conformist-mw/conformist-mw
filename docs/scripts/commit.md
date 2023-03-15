@@ -6,7 +6,7 @@ title: Commit whenever you want
 
 Sometimes you need to commit something in the specific date (respecting
  `committer` and `author` dates), so here is a ad-hoc script to do this in the
-  random time within a choosen day.
+  random time within a chosen day.
 
  Save it and add executable flag:
 
