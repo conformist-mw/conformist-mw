@@ -2,7 +2,9 @@
 title: Commit whenever you want
 ---
 
-### Description
+# Commit any date
+
+## Description
 
 Sometimes you need to commit something in the specific date (respecting
  `committer` and `author` dates), so here is a ad-hoc script to do this in the
@@ -15,13 +17,13 @@ touch ~/.local/bin/git-commit
 chmod +x ~/.local/bin/git-commit
  ```
 
-### Usage example
+## Usage example
 
  ```shell
  git-commit 2023-01-01 "git commit message"
  ```
 
- ### Script
+## Script
 
  ```python
  #!/usr/bin/env python

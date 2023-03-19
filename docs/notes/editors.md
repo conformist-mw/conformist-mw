@@ -2,7 +2,9 @@
 title: Editor helpers
 ---
 
-### Editorconfig
+# Editor code formatting helpers
+
+## Editorconfig
 
 Common example of [editorconfig](https://editorconfig.org/)
 

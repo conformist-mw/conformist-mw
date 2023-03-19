@@ -2,7 +2,9 @@
 title: How to use Alembic from the beginning
 ---
 
-### Version file names
+# Alembic tip and tricks
+
+## Version file names
 
 By default variable `file_template` is commented out in `alembic.ini` and
 revisions creates with the hash at the beginning of the filename, so they are
@@ -16,7 +18,7 @@ To fix that we need to set how to name them:
 file_template = %%(year)d_%%(month).2d_%%(day).2d_%%(hour).2d%%(minute).2d-%%(rev)s_%%(slug)s
 ```
 
-### Constraint naming
+## Constraint naming
 
 By default constrains names are defined by database itself and it is possible
 that during migration `alembic` fails to find target constraint.
@@ -43,14 +45,14 @@ Links:
 - [sqlalchemy docs](https://docs.sqlalchemy.org/en/20/core/constraints.html#configuring-constraint-naming-conventions)
 - [alembic docs](https://alembic.sqlalchemy.org/en/latest/naming.html)
 
-### Auto detection
+## Auto detection
 
-By default `alembic` ignores type changes in columns, so we have to set it 
+By default `alembic` ignores type changes in columns, so we have to set it
 up separately.
 
 Within `env.py`:
 
-```python {12}
+```python
 def run_migrations_online():
     connectable = engine_from_config(
         config.get_section(config.config_ini_section),
@@ -62,6 +64,7 @@ def run_migrations_online():
         context.configure(
             connection=connection,
             target_metadata=target_metadata,
+            # highlight-next-line
             compare_type=True,
         )
 
