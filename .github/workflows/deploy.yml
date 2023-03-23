@@ -30,4 +30,4 @@ jobs:
           host: ${{ secrets.DEPLOY_HOST }}
           username: ${{ secrets.DEPLOY_USER }}
           key: ${{ secrets.DEPLOY_KEY }}
-          script: "docker restart docs && echo 'deployed' | sendmail"
+          script: "docker restart docs && echo 'deployed' | /usr/sbin/sendmail"
