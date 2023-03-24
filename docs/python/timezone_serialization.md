@@ -6,11 +6,18 @@ title: isoformat for js
 
 Postgres has a support of datetime with timezone, type TIMESTAMP:
 
-> For timestamp with time zone, the internally stored value is always in UTC (Universal Coordinated Time, traditionally known as Greenwich Mean Time, GMT). An input value that has an explicit time zone specified is converted to UTC using the appropriate offset for that time zone. If no time zone is stated in the input string, then it is assumed to be in the time zone indicated by the system's TimeZone parameter, and is converted to UTC using the offset for the timezone zone.
+> For timestamp with time zone, the internally stored value is always in UTC
+> (Universal Coordinated Time, traditionally known as Greenwich Mean Time, GMT).
+> An input value that has an explicit time zone specified is converted to UTC
+> using the appropriate offset for that time zone. If no time zone is stated in
+> the input string, then it is assumed to be in the time zone indicated by the
+> system's TimeZone parameter, and is converted to UTC using the offset for the
+> timezone zone.
 
 More of this [in the official documentation](https://www.postgresql.org/docs/current/datatype-datetime.html).
 
-If there is no tzinfo in the datetime object it equals to the machine timezone and converts automatically.
+If there is no tzinfo in the datetime object it equals to the machine timezone
+and converts automatically.
 
 For example for SQLA ([TIMESTAMP](https://docs.sqlalchemy.org/en/20/core/type_basics.html#sqlalchemy.types.TIMESTAMP)):
 
