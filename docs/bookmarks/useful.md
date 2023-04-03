@@ -7,3 +7,4 @@ title: Useful links
 - [online webhooks (for push)](https://webhook.site/)
 - [open ai chat](https://chat.openai.com/chat)
 - [refactoring](https://refactoring.guru/)
+- [most popular book about testing](https://www.obeythetestinggoat.com/)
