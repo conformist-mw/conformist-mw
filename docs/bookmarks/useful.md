@@ -10,3 +10,4 @@ title: Useful links
 - [most popular book about testing](https://www.obeythetestinggoat.com/)
 - [traefik acme.json dumper](https://github.com/ldez/traefik-certs-dumper)
 - [how does email work](https://explained-from-first-principles.com/email/)
+- [photopea online image editor](https://www.photopea.com/)
