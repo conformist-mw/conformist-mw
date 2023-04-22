@@ -12,3 +12,4 @@ title: Useful links
 - [how does email work](https://explained-from-first-principles.com/email/)
 - [photopea online image editor](https://www.photopea.com/)
 - [git branch online training](https://learngitbranching.js.org/)
+- [exercism online programming lang training](https://exercism.org/)
