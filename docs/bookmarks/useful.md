@@ -14,3 +14,4 @@ title: Useful links
 - [git branch online training](https://learngitbranching.js.org/)
 - [exercism online programming lang training](https://exercism.org/)
 - [security headers analyzer](https://securityheaders.com/)
+- [mozilla http scanner](https://observatory.mozilla.org/)
