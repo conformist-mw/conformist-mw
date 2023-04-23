@@ -15,3 +15,4 @@ title: Useful links
 - [exercism online programming lang training](https://exercism.org/)
 - [security headers analyzer](https://securityheaders.com/)
 - [mozilla http scanner](https://observatory.mozilla.org/)
+- [badssl tester (for your code)](https://badssl.com/)
