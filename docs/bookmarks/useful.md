@@ -16,3 +16,4 @@ title: Useful links
 - [security headers analyzer](https://securityheaders.com/)
 - [mozilla http scanner](https://observatory.mozilla.org/)
 - [badssl tester (for your code)](https://badssl.com/)
+- [online minimization of boolean functions](http://tma.main.jp/logic/index_en.html)
