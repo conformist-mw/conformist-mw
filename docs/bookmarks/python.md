@@ -15,3 +15,4 @@ title: Python
    - [6 channel](http://www.pythonchallenge.com/pc/def/channel.html)
    - [7 oxygen](http://www.pythonchallenge.com/pc/def/oxygen.html)
    - [8 integrity](http://www.pythonchallenge.com/pc/def/integrity.html)
+   - [9 good](http://www.pythonchallenge.com/pc/return/good.html)
