@@ -14,3 +14,4 @@ title: Python
    - [5 peak](http://www.pythonchallenge.com/pc/def/peak.html)
    - [6 channel](http://www.pythonchallenge.com/pc/def/channel.html)
    - [7 oxygen](http://www.pythonchallenge.com/pc/def/oxygen.html)
+   - [8 integrity](http://www.pythonchallenge.com/pc/def/integrity.html)
