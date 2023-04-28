@@ -17,3 +17,4 @@ title: Python
    - [8 integrity](http://www.pythonchallenge.com/pc/def/integrity.html)
    - [9 good](http://www.pythonchallenge.com/pc/return/good.html)
    - [10 bull](http://www.pythonchallenge.com/pc/return/bull.html)
+   - [11 5808](http://www.pythonchallenge.com/pc/return/5808.html)
