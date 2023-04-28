@@ -16,3 +16,4 @@ title: Python
    - [7 oxygen](http://www.pythonchallenge.com/pc/def/oxygen.html)
    - [8 integrity](http://www.pythonchallenge.com/pc/def/integrity.html)
    - [9 good](http://www.pythonchallenge.com/pc/return/good.html)
+   - [10 bull](http://www.pythonchallenge.com/pc/return/bull.html)
