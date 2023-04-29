@@ -18,3 +18,4 @@ title: Python
    - [9 good](http://www.pythonchallenge.com/pc/return/good.html)
    - [10 bull](http://www.pythonchallenge.com/pc/return/bull.html)
    - [11 5808](http://www.pythonchallenge.com/pc/return/5808.html)
+   - [12 evil](http://www.pythonchallenge.com/pc/return/evil.html)
