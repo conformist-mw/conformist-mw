@@ -6,3 +6,4 @@ title: SQL
 - [Why You Should Care That Your SQL DDL is Transactional](https://julien.danjou.info/why-you-should-care-that-your-sql-ddl-is-transactional/)
 - [Довольно простой sql тренажёр](https://sqlbolt.com/)
 - [explain online](https://explain.depesz.com/)
+- [sql-ex.ru тренажёр](https://sql-ex.ru/)
