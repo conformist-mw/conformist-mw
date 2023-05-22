@@ -27,4 +27,7 @@ select = [
   "BLE",  # flake8-blind-except
   "N",    # pep8-naming
 ]
+
+[tool.ruff.flake8-quotes]
+inline-quotes = "single"
 ```
