@@ -8,3 +8,4 @@ title: Professional Skills
 - [Backend Roadmap](https://roadmap.sh/backend)
 - [Teamlead Roadmap](https://tlroadmap.io)
 - [How to deliver constructive feedback in difficult situations](https://productivityhub.org/2019/04/19/how-to-deliver-constructive-feedback-in-difficult-situations/)
+- [Path from engineer to CTO](https://apolomodov.medium.com/path-for-technical-manger-from-engineer-to-cto-c3178c469636)
