@@ -5,6 +5,7 @@ title: Python
 - [Python behind the scenes](https://tenthousandmeters.com)
 - [Python Design Patterns](https://python-patterns.guide)
 - [Python anti patterns](https://docs.quantifiedcode.com/python-anti-patterns/index.html)
+- [pytest basics](https://stribny.name/blog/pytest/)
 - [python riddle](http://www.pythonchallenge.com/)
    - [0 start](http://www.pythonchallenge.com/pc/def/0.html)
    - [1 map](http://www.pythonchallenge.com/pc/def/map.html)
