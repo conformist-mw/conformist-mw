@@ -4,6 +4,7 @@ title: Useful links
 
 # Useful links
 
+- [z-lib (free books)](https://z-lib.io/)
 - [online webhooks (for push)](https://webhook.site/)
 - [open ai chat](https://chat.openai.com/chat)
 - [refactoring](https://refactoring.guru/)
