@@ -7,3 +7,4 @@ title: SQL
 - [Довольно простой sql тренажёр](https://sqlbolt.com/)
 - [explain online](https://explain.depesz.com/)
 - [sql-ex.ru тренажёр](https://sql-ex.ru/)
+- [build your own db](https://build-your-own.org/database/)
