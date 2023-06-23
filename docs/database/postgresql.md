@@ -11,3 +11,5 @@ JOIN pg_class r ON c.conrelid = r.oid
 JOIN pg_attribute a ON r.oid = a.attrelid AND a.attnum = ANY (c.conkey)
 WHERE conname in (SELECT conname from pg_constraint where contype = 'f');
 ```
+
+[Rename Postgres Table with Alembic](https://petegraham.co.uk/rename-postgres-table-with-alembic/)
