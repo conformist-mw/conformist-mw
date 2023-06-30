@@ -20,3 +20,4 @@ title: Useful links
 - [badssl tester (for your code)](https://badssl.com/)
 - [online minimization of boolean functions](http://tma.main.jp/logic/index_en.html)
 - [TILT](https://tilt.dev/)
+- [Granted (multi aws)](https://docs.commonfate.io/granted/getting-started/)
