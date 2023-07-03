@@ -21,3 +21,4 @@ title: Useful links
 - [online minimization of boolean functions](http://tma.main.jp/logic/index_en.html)
 - [TILT](https://tilt.dev/)
 - [Granted (multi aws)](https://docs.commonfate.io/granted/getting-started/)
+- [minikube](https://github.com/kubernetes/minikube)
