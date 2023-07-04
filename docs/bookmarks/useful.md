@@ -22,3 +22,4 @@ title: Useful links
 - [TILT](https://tilt.dev/)
 - [Granted (multi aws)](https://docs.commonfate.io/granted/getting-started/)
 - [minikube](https://github.com/kubernetes/minikube)
+- [asdf](https://asdf-vm.com/)
