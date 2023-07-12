@@ -1,0 +1,87 @@
+.landing .is-blue-grey {
+  background-color: #cfd8dc;
+}
+
+.landing .skills li {
+  list-style: none;
+}
+
+.landing .skills ul {
+  margin-left: 0;
+}
+
+.landing a.icon {
+  color: white;
+}
+
+.landing .social-media {
+  margin-top: 25px;
+}
+
+.landing .navbar-item.active {
+  border-bottom: 1px solid white;
+}
+
+.landing .navbar-brand > .navbar-item {
+  margin-right: 15px;
+}
+
+div.timeline .timeline-item .timeline-marker.is-image.is-48x48 {
+  display: flex;
+  align-items: center;
+  background-color: #FFF;
+}
+
+div.timeline-marker.is-image.is-48x48 img {
+  margin: auto;
+}
+
+.timeline-item {
+  overflow-wrap: anywhere;
+}
+
+.timeline a {
+  text-decoration: underline;
+}
+
+p.subtitle {
+  line-height: 2.5rem;
+}
+
+.is-print {
+  display: none;
+}
+
+@media print {
+  .no-print, .no-print * {
+    display: none !important;
+  }
+
+  .is-print, .is-print * {
+    display: block !important;
+  }
+
+  * {
+    line-height: 14px;
+  }
+
+  .is-three-quarters.is-print ul li {
+    line-height: 18px;
+  }
+
+  .image {
+    width: 100px !important;
+  }
+
+  .pagebreak {
+    margin-top: 90px;
+  }
+
+  .is-offset-4 {
+    margin-left: 40px !important;
+  }
+
+  .timeline .timeline-item::before {
+    background-color: transparent;
+  }
+}
