@@ -23,3 +23,5 @@ title: Useful links
 - [Granted (multi aws)](https://docs.commonfate.io/granted/getting-started/)
 - [minikube](https://github.com/kubernetes/minikube)
 - [asdf](https://asdf-vm.com/)
+- [cw an cloudwatch logs tail tool](https://github.com/lucagrulla/cw)
+
