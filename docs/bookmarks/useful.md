@@ -24,4 +24,4 @@ title: Useful links
 - [minikube](https://github.com/kubernetes/minikube)
 - [asdf](https://asdf-vm.com/)
 - [cw an cloudwatch logs tail tool](https://github.com/lucagrulla/cw)
-
+- [Avoid using models within migrations](https://jakeyesbeck.com/2021/04/10/avoid-models-in-migrations/)
