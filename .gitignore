@@ -1,4 +1,4 @@
-blog/node_modules
-blog/public
-blog/db.json
-blog/themes
+src/node_modules
+src/public
+src/db.json
+src/themes
