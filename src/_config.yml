@@ -41,7 +41,7 @@ external_link:
   exclude: ''
 filename_case: 0
 render_drafts: false
-post_asset_folder: false
+post_asset_folder: true
 relative_link: false
 future: true
 highlight:
@@ -110,7 +110,7 @@ theme_config:
     post_count: 2
   # https://github.com/probberechts/hexo-theme-cactus/tree/master/source/css/_highlight
   # highlight: COLORSCHEME_NAME
-  
+
   social_links:
     -
       icon: github
