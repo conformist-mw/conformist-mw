@@ -106,8 +106,7 @@ theme_config:
     articles: /archives/
     about: https://about.conformist.name
   posts_overview:
-    show_all_posts: false
-    post_count: 2
+    show_all_posts: true
   # https://github.com/probberechts/hexo-theme-cactus/tree/master/source/css/_highlight
   # highlight: COLORSCHEME_NAME
 
