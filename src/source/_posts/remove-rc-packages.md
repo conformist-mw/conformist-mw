@@ -1,5 +1,5 @@
 ---
-title: remove rc packages
+title: Удаление пакетов, помеченных как rc (dpkg -l)
 date: 2015-03-07 06:06:02
 tags:
   - linux
@@ -27,3 +27,5 @@ apt-get purge $(dpkg -l | awk '/^rc/ { print $2 }')
 `$ aptitude purge '~c'`
 
 Вот таким нехитрым способом можно почистить систему от мусора не нужных файлов
+
+Restored from [original](https://web.archive.org/web/20200206164241/http://conformist-mw.blogspot.com/2015/03/rc-dpkg-l.html)

@@ -1,5 +1,5 @@
 ---
-title: history with command time
+title: history с временем исполнения команды
 date: 2015-03-10 21:47:41
 tags:
   - linux
@@ -29,3 +29,5 @@ export HISTCONTROL=ignoreboth # удаляет дубликаты команд (
 export HISTIGNORE="df*:free*" # игнорируем некоторые команды
 export HISTSIZE=10000 # количество команд для запоминания (500 by default)
 ```
+
+Restored from [original](https://web.archive.org/web/20200206164241/http://conformist-mw.blogspot.com/2015/03/history.html)
