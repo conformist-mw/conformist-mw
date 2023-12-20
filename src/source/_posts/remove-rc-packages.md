@@ -1,6 +1,6 @@
 ---
 title: remove rc packages
-date: 2015-03-17 06:06:02
+date: 2015-03-07 06:06:02
 tags:
   - linux
   - debian
