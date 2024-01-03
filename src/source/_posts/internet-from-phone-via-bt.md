@@ -1,5 +1,5 @@
 ---
-title: internet from phone via bt
+title: Интернет с телефона через bluetooth
 date: 2016-02-01 11:04:28
 tags:
   - linux
