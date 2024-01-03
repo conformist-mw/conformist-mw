@@ -1,6 +1,6 @@
 ---
 title: internet from phone via bt
-date: 2016-02-16 11:04:28
+date: 2016-02-01 11:04:28
 tags:
   - linux
   - linux4all
