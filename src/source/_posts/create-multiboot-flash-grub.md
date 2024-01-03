@@ -1,6 +1,6 @@
 ---
 title: Создание multiboot флешки с grub2, grub4dos в linux
-date: 2023-12-30 15:48:55
+date: 2015-12-13 15:48:55
 tags:
   - grub2
   - grub4dos
