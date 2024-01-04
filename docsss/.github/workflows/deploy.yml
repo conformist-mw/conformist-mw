@@ -1,0 +1,33 @@
+name: deploy
+on:
+  push:
+    branches:
+      - master
+jobs:
+  lint:
+    uses: ./.github/workflows/lint.yml
+  deploy:
+    needs: [lint]
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
+        with:
+          node-version: 16
+          cache: 'npm'
+      - run: npm install
+      - run: npm run build
+      - uses: burnett01/rsync-deployments@5.2.1
+        with:
+          switches: -avzr --delete
+          path: build/
+          remote_path: /home/${{ secrets.DEPLOY_USER }}/server/docs/
+          remote_host: ${{ secrets.DEPLOY_HOST }}
+          remote_user: ${{ secrets.DEPLOY_USER }}
+          remote_key: ${{ secrets.DEPLOY_KEY }}
+      - uses: appleboy/ssh-action@v0.1.8
+        with:
+          host: ${{ secrets.DEPLOY_HOST }}
+          username: ${{ secrets.DEPLOY_USER }}
+          key: ${{ secrets.DEPLOY_KEY }}
+          script: "docker restart docs && echo 'deployed' | /usr/sbin/sendmail"
