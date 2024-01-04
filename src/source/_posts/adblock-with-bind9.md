@@ -1,5 +1,5 @@
 ---
-title: adblock with bind9
+title: adblock силами списка, apache2 и bind9
 date: 2015-04-28 15:02:50
 tags:
   - linux

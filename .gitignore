@@ -2,3 +2,4 @@ src/node_modules
 src/public
 src/db.json
 src/themes
+.DS_Store
