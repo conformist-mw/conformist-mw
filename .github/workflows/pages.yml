@@ -45,6 +45,9 @@ jobs:
       - name: Copy files
         run: cp -R blog/public _site/blog/
 
+      - name: Copy docs
+        run: cp -R docs _site/docs/
+
       - name: Fix permissions
         run: |
           chmod -c -R +rX "_site/" | while read line; do
