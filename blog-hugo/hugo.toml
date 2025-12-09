@@ -1,0 +1,90 @@
+baseURL = 'https://about.conformist.name/blog/'
+languageCode = 'en'
+defaultContentLanguage = 'en'
+title = 'Outdated blog'
+theme = 'LoveIt'
+enableRobotsTXT = true
+
+[pagination]
+  pagerSize = 10
+  path = 'page'
+
+[permalinks]
+  posts = '/:year/:month/:day/:slug/'
+
+[outputs]
+  home = ['HTML', 'RSS']
+
+[menu]
+  [[menu.main]]
+    identifier = 'home'
+    name = 'Home'
+    url = '/'
+    weight = 1
+
+  [[menu.main]]
+    identifier = 'archives'
+    name = 'Archives'
+    url = '/archives/'
+    weight = 2
+
+  [[menu.main]]
+    identifier = 'about'
+    name = 'About'
+    url = 'https://about.conformist.name'
+    weight = 3
+
+[params]
+  defaultTheme = 'light'
+  title = 'Outdated blog'
+  description = 'Tech notes and snippets.'
+  dateFormat = '2006-01-02'
+
+  [params.author]
+    name = 'Oleg Smedyuk'
+    email = 'oleg.smedyuk@gmail.com'
+    link = 'https://github.com/conformist-mw'
+
+  [params.home]
+    rss = 10
+    [params.home.profile]
+      enable = false
+    [params.home.posts]
+      enable = true
+      paginate = 6
+
+  [params.social]
+    GitHub = 'https://github.com/conformist-mw'
+    Email = 'mailto:oleg.smedyuk@gmail.com'
+
+  [params.page]
+    hiddenFromSearch = false
+    hiddenFromHomePage = false
+    [params.page.toc]
+      enable = true
+      auto = true
+    [params.page.code]
+      copy = true
+      maxShownLines = 80
+      [params.page.code.render]
+        goat = true
+        mermaid = true
+
+[markup]
+  [markup.highlight]
+    style = 'dracula'
+    lineNos = false
+    codeFences = true
+    guessSyntax = false
+    noClasses = true
+  [markup.goldmark]
+    [markup.goldmark.extensions]
+      definitionList = true
+      footnote = true
+      linkify = true
+      strikethrough = true
+      table = true
+      taskList = true
+      typographer = true
+    [markup.goldmark.renderer]
+      unsafe = true
