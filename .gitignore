@@ -2,4 +2,10 @@ blog/node_modules
 blog/public
 blog/db.json
 blog/themes
+blog/lib
+doks
 .DS_Store
+doks/node_modules
+blog-hugo/public
+blog-hugo/resources/_gen
+blog-hugo/.hugo_build.lock
