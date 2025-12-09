@@ -9,3 +9,4 @@ doks/node_modules
 blog-hugo/public
 blog-hugo/resources/_gen
 blog-hugo/.hugo_build.lock
+blog-hugo/themes/LoveIt
