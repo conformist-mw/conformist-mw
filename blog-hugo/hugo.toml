@@ -23,22 +23,16 @@ enableRobotsTXT = true
     weight = 1
 
   [[menu.main]]
-    identifier = 'archives'
-    name = 'Archives'
-    url = '/archives/'
-    weight = 2
-
-  [[menu.main]]
     identifier = 'posts'
     name = 'Posts'
     url = '/posts/'
-    weight = 3
+    weight = 1
 
   [[menu.main]]
     identifier = 'about'
     name = 'About'
     url = 'https://about.conformist.name'
-    weight = 4
+    weight = 2
 
 [params]
   defaultTheme = 'light'
