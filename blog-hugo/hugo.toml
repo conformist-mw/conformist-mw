@@ -71,6 +71,13 @@ enableRobotsTXT = true
       [params.page.code.render]
         goat = true
         mermaid = true
+
+[params.footer]
+  since = 2016
+  author = true
+  copyright = true
+  hugo = false
+  license = ''
     [params.page.share]
       enable = true
       X = true
