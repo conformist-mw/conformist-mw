@@ -3,7 +3,7 @@ name: Build blog
 on:
   push:
     branches:
-      - '**'
+      - master
 
 jobs:
   build:
