@@ -39,6 +39,8 @@ enableRobotsTXT = true
   title = 'Outdated blog'
   description = 'Tech notes and snippets.'
   dateFormat = '2006-01-02'
+  [params.header.title]
+    name = 'Outdated blog'
 
   [params.author]
     name = 'Oleg Smedyuk'
