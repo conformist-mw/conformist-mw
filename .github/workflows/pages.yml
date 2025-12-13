@@ -12,31 +12,17 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v4
 
-      - name: Checkout external theme
-        uses: actions/checkout@v4
+      - name: Fetch LoveIt theme
+        run: git clone https://github.com/dillonzq/LoveIt.git blog/themes/LoveIt --depth 1
+
+      - name: Set up Hugo
+        uses: peaceiris/actions-hugo@v3
         with:
-          repository: "probberechts/hexo-theme-cactus"
-          path: "blog/themes/cactus"
+          hugo-version: '0.152.2'
+          extended: true
 
-      - name: Set up Node.js 16.x
-        uses: actions/setup-node@v2
-        with:
-          node-version: '16'
-
-      - name: Cache npm packages
-        uses: actions/cache@v3
-        with:
-          path: ~/.npm
-          key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
-          restore-keys: |
-            ${{ runner.os }}-node-
-
-      - name: Install dependencies
-        run: npm install
-        working-directory: blog
-
-      - name: Build frontend
-        run: npm run build
+      - name: Build blog with Hugo
+        run: hugo --minify
         working-directory: blog
 
       - name: Copy landing
@@ -45,9 +31,6 @@ jobs:
       - name: Copy files
         run: cp -R blog/public _site/blog/
 
-      - name: Copy docs
-        run: cp -R docs _site/docs/
-
       - name: Fix permissions
         run: |
           chmod -c -R +rX "_site/" | while read line; do
@@ -55,7 +38,7 @@ jobs:
           done
 
       - name: Upload Pages artifact
-        uses: actions/upload-pages-artifact@v2
+        uses: actions/upload-pages-artifact@v3
 
   deploy:
     needs: build
@@ -69,4 +52,4 @@ jobs:
     steps:
       - name: Deploy to GitHub Pages
         id: deployment
-        uses: actions/deploy-pages@v3
+        uses: actions/deploy-pages@v4
