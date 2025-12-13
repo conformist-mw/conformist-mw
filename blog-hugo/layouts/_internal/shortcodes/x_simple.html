@@ -1,8 +1,0 @@
-{{- $user := .Get "user" | default (.Get 0) -}}
-{{- $id := .Get "id" | default (.Get 1) -}}
-{{- if and $user $id -}}
-  {{- $url := printf "https://x.com/%s/status/%s" $user $id -}}
-  <p><a href="{{ $url }}">View on X</a></p>
-{{- else -}}
-  <p>Missing X shortcode parameters.</p>
-{{- end -}}
