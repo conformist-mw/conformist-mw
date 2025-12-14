@@ -295,9 +295,9 @@ h3 {
     flex: 0 0 auto;
 }
 
-.pill-icon .icon {
-    width: 18px;
-    height: 18px;
+.pill-icon i {
+    font-size: 16px;
+    line-height: 1;
     display: block;
 }
 
