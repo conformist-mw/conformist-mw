@@ -301,10 +301,17 @@ h3 {
     flex: 0 0 auto;
 }
 
-.pill-icon i {
-    font-size: 16px;
-    line-height: 1;
+.pill-icon img {
+    width: 18px;
+    height: 18px;
     display: block;
+    filter: invert(1);
+    opacity: 0.92;
+}
+
+html[data-theme='light'] .pill-icon img {
+    filter: invert(0);
+    opacity: 0.88;
 }
 
 .hero-photo {
