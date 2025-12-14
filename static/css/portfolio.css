@@ -71,11 +71,13 @@ a:hover {
 .container {
     max-width: var(--max);
     margin: 0 auto;
-    padding: 0 20px;
+    padding: 0 clamp(24px, 4vw, 56px);
 }
 
 .section {
-    padding: 56px 0;
+    padding-top: 56px;
+    padding-bottom: 56px;
+    padding-block: 56px;
 }
 
 .skip-link {
@@ -113,7 +115,9 @@ html[data-theme='light'] .site-header {
     align-items: center;
     justify-content: space-between;
     gap: 16px;
-    padding: 14px 0;
+    padding-top: 14px;
+    padding-bottom: 14px;
+    padding-block: 14px;
 }
 
 .brand {
@@ -212,7 +216,9 @@ html[data-theme='light'] .btn-primary {
 }
 
 .hero {
-    padding: 54px 0 14px;
+    padding-top: 54px;
+    padding-bottom: 14px;
+    padding-block: 54px 14px;
 }
 
 .hero-grid {
