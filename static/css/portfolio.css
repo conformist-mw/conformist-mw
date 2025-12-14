@@ -407,7 +407,7 @@ html[data-theme='light'] .tags li {
     padding: 7px;
     border-radius: 14px;
     border: 1px solid var(--border);
-    background: rgba(255, 255, 255, 0.08);
+    background: rgba(255, 255, 255, 0.92);
     display: grid;
     place-items: center;
     overflow: hidden;
@@ -417,10 +417,6 @@ html[data-theme='light'] .tags li {
     width: 100%;
     height: 100%;
     object-fit: contain;
-}
-
-html[data-theme='light'] .timeline-marker {
-    background: rgba(255, 255, 255, 0.8);
 }
 
 .timeline-content a {
