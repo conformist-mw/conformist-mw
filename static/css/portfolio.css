@@ -65,7 +65,7 @@ a:hover {
 :focus-visible {
     outline: 3px solid var(--focus);
     outline-offset: 3px;
-    border-radius: 10px;
+    border-radius: 14px;
 }
 
 .container {
@@ -195,7 +195,7 @@ html[data-theme='light'] .site-header {
 
 .btn-primary {
     background: linear-gradient(135deg, var(--accent), var(--accent-2));
-    border-color: transparent;
+    border: 0;
     color: rgba(255, 255, 255, 0.95);
 }
 
