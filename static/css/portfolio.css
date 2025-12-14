@@ -379,7 +379,7 @@ html[data-theme='light'] .tags li {
 
 .timeline-item {
     display: grid;
-    grid-template-columns: 50px 1fr;
+    grid-template-columns: 62px 1fr;
     gap: 14px;
     align-items: flex-start;
     padding: 18px;
@@ -389,14 +389,21 @@ html[data-theme='light'] .tags li {
 }
 
 .timeline-marker {
-    width: 40px;
-    height: 40px;
+    width: 48px;
+    height: 48px;
+    padding: 7px;
     border-radius: 14px;
     border: 1px solid var(--border);
     background: rgba(255, 255, 255, 0.08);
     display: grid;
     place-items: center;
     overflow: hidden;
+}
+
+.timeline-marker img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
 }
 
 html[data-theme='light'] .timeline-marker {
