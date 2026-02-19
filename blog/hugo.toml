@@ -29,6 +29,12 @@ enableRobotsTXT = true
     weight = 1
 
   [[menu.main]]
+    identifier = 'notes'
+    name = 'Notes'
+    url = '/notes/'
+    weight = 2
+
+  [[menu.main]]
     identifier = 'about'
     name = 'About'
     url = 'https://about.conformist.name'
