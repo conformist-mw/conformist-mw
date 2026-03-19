@@ -34,6 +34,7 @@
 - [Mail](mail.md)
 
 - Notes
+  - [CLI Tools](notes/cli_tools.md)
   - [Convert tags](notes/convert_tags.md)
   - [Editors](notes/editors.md)
   - [Keenetic](notes/keenetic.md)
