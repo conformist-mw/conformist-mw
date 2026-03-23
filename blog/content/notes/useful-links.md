@@ -11,3 +11,8 @@ draft: false
 - [Python Design Patterns](https://python-patterns.guide)
 - [Python anti patterns](https://docs.quantifiedcode.com/python-anti-patterns/index.html)
 - [pytest basics](https://stribny.name/blog/pytest/)
+
+
+## Interesting
+
+- [Every noise at once](https://everynoise.com/engenremap.html)

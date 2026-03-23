@@ -1,16 +1,20 @@
-baseURL = 'https://about.conformist.name/blog/'
+baseURL = 'https://about.conformist.name/'
 languageCode = 'en'
 defaultContentLanguage = 'en'
 title = 'Outdated blog'
 theme = 'LoveIt'
 enableRobotsTXT = true
+staticDir = ['static', '../static']
 
 [pagination]
   pagerSize = 10
   path = 'page'
 
 [permalinks]
-  posts = '/:year/:month/:day/:slug/'
+  [permalinks.page]
+    posts = '/blog/:year/:month/:day/:slug/'
+  [permalinks.section]
+    posts = '/blog/'
 
 [outputs]
   home = ['HTML', 'RSS']
@@ -25,7 +29,7 @@ enableRobotsTXT = true
   [[menu.main]]
     identifier = 'posts'
     name = 'Posts'
-    url = '/posts/'
+    url = '/blog/'
     weight = 1
 
   [[menu.main]]
@@ -37,8 +41,8 @@ enableRobotsTXT = true
   [[menu.main]]
     identifier = 'about'
     name = 'About'
-    url = 'https://about.conformist.name'
-    weight = 2
+    url = '/'
+    weight = 3
 
 [params]
   defaultTheme = 'light'
