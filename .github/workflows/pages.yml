@@ -25,20 +25,16 @@ jobs:
         run: hugo --minify
         working-directory: blog
 
-      - name: Copy landing
-        run: mkdir _site && cp -R static index.html _site/
-
-      - name: Copy files
-        run: cp -R blog/public _site/blog/
-
       - name: Fix permissions
         run: |
-          chmod -c -R +rX "_site/" | while read line; do
+          chmod -c -R +rX "blog/public/" | while read line; do
             echo "::warning title=Invalid file permissions automatically fixed::$line"
           done
 
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3
+        with:
+          path: blog/public
 
   deploy:
     needs: build
