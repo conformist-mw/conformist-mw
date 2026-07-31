@@ -1,0 +1,89 @@
+@import "tailwindcss";
+
+/* Тема переключается атрибутом data-theme на <html> (см. скрипт в index.html),
+   поэтому нужен свой вариант вместо встроенного dark: (он смотрит в prefers-color-scheme). */
+@custom-variant light (&:where([data-theme='light'] *));
+
+/* Рантайм-палитра: значения меняются вместе с data-theme. */
+:root {
+    --bg: #0b1020;
+    --bg2: #0b132e;
+    --panel: rgba(255, 255, 255, 0.06);
+    --panel-2: rgba(255, 255, 255, 0.08);
+    --text: rgba(255, 255, 255, 0.92);
+    --muted: rgba(255, 255, 255, 0.68);
+    --line: rgba(255, 255, 255, 0.14);
+    --shadow: rgba(0, 0, 0, 0.35);
+    --accent: #8b5cf6;
+    --accent-2: #22d3ee;
+    --focus: rgba(34, 211, 238, 0.55);
+}
+
+html[data-theme='light'] {
+    --bg: #f7f7fb;
+    --bg2: #eef2ff;
+    --panel: rgba(17, 24, 39, 0.04);
+    --panel-2: rgba(17, 24, 39, 0.06);
+    --text: rgba(17, 24, 39, 0.92);
+    --muted: rgba(17, 24, 39, 0.68);
+    --line: rgba(17, 24, 39, 0.12);
+    --shadow: rgba(0, 0, 0, 0.12);
+}
+
+/* inline — чтобы утилиты подставляли var(--panel) и т.д. напрямую
+   и продолжали переключаться по data-theme, а не запекали значение темы. */
+@theme inline {
+    --color-bg: var(--bg);
+    --color-bg-2: var(--bg2);
+    --color-panel: var(--panel);
+    --color-panel-2: var(--panel-2);
+    --color-text: var(--text);
+    --color-muted: var(--muted);
+    --color-line: var(--line);
+    --color-accent: var(--accent);
+    --color-accent-2: var(--accent-2);
+}
+
+@theme {
+    /* Единственный брейкпоинт лендинга — 880px (как было в portfolio.css). */
+    --breakpoint-md: 880px;
+
+    --font-sans: ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, 'Apple Color Emoji',
+        'Segoe UI Emoji';
+}
+
+@layer base {
+    html {
+        scroll-behavior: smooth;
+    }
+
+    body {
+        color: var(--text);
+        line-height: 1.55;
+        background:
+            radial-gradient(1000px 600px at 20% 0%, rgba(139, 92, 246, 0.24), transparent 55%),
+            radial-gradient(900px 550px at 85% 10%, rgba(34, 211, 238, 0.18), transparent 60%),
+            linear-gradient(160deg, var(--bg), var(--bg2));
+    }
+
+    a {
+        text-decoration-thickness: 1px;
+        text-underline-offset: 3px;
+    }
+
+    a:hover {
+        text-decoration-thickness: 2px;
+    }
+
+    :focus-visible {
+        outline: 3px solid var(--focus);
+        outline-offset: 3px;
+        border-radius: 14px;
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+        html {
+            scroll-behavior: auto;
+        }
+    }
+}

@@ -1,37 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Oleg Smedyuk — Full-stack Python Engineer</title>
+  <title>Oleg Smedyuk — Staff Software Engineer</title>
 
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Full-stack Python engineer building reliable web backends, integrations, and product features. Django/Flask, Postgres, AWS, APIs.">
-  <meta name="keywords" content="python,full stack,developer,django,flask,rest,graphql,postgresql,aws">
-  <meta property="og:title" content="Oleg Smedyuk — Full-stack Python Engineer">
-  <meta property="og:description" content="Full-stack Python engineer building reliable web backends, integrations, and product features. Django/Flask, Postgres, AWS, APIs.">
+  <meta name="description" content="Staff Software Engineer designing identity, billing, and compliance platforms in Python on AWS — the services other product teams build on.">
+  <meta name="keywords" content="python,staff engineer,platform engineering,distributed systems,identity,authorization,subscriptions,billing,gdpr,aws,lambda,postgresql">
+  <meta property="og:title" content="Oleg Smedyuk — Staff Software Engineer">
+  <meta property="og:description" content="Staff Software Engineer designing identity, billing, and compliance platforms in Python on AWS — the services other product teams build on.">
   <meta property="og:image" content="static/images/logo_w_900.webp">
   <meta name="color-scheme" content="light dark">
   <link rel="icon" sizes="192x192" href="static/icons/android-icon.png">
   <link rel="apple-touch-icon" sizes="180x180" href="static/icons/apple-icon.png">
   <link rel="shortcut icon" type="image/png" href="static/favicon.ico"/>
-  <link rel="stylesheet" type="text/css" href="static/css/portfolio.css">
+  <link rel="stylesheet" type="text/css" href="static/css/tailwind.css">
 </head>
 <body>
-<a class="skip-link" href="#content">Skip to content</a>
+<a class="absolute left-3 top-3 z-[1000] -translate-y-[200%] rounded-xl border border-line bg-panel px-3 py-2.5 transition-transform duration-150 ease-out focus:translate-y-0" href="#content">Skip to content</a>
 
-<header class="site-header">
-  <div class="container header-inner">
-    <a class="brand" href="./">Oleg Smedyuk</a>
-    <nav class="site-nav" aria-label="Primary">
-      <a href="#highlights">Highlights</a>
-      <a href="#experience">Experience</a>
-      <a href="#skills">Skills</a>
-      <a href="#contact">Contact</a>
+<header class="sticky top-0 z-50 border-b border-line bg-black/25 backdrop-blur-md light:bg-white/65">
+  <div class="mx-auto flex w-full max-w-[1100px] items-center justify-between gap-4 px-[clamp(24px,4vw,56px)] py-3.5">
+    <a class="whitespace-nowrap font-bold tracking-[0.2px]" href="./">Oleg Smedyuk</a>
+    <nav class="hidden flex-1 items-center justify-center gap-3.5 md:flex" aria-label="Primary">
+      <a class="rounded-xl px-2.5 py-2 text-muted hover:bg-panel hover:text-text" href="#highlights">Highlights</a>
+      <a class="rounded-xl px-2.5 py-2 text-muted hover:bg-panel hover:text-text" href="#experience">Experience</a>
+      <a class="rounded-xl px-2.5 py-2 text-muted hover:bg-panel hover:text-text" href="#skills">Skills</a>
+      <a class="rounded-xl px-2.5 py-2 text-muted hover:bg-panel hover:text-text" href="#contact">Contact</a>
     </nav>
-        <div class="header-actions">
-          <button class="theme-toggle" type="button" aria-label="Toggle theme" aria-pressed="false">
-        <svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+    <div class="flex items-center gap-2.5">
+      <button class="theme-toggle inline-flex size-[42px] cursor-pointer items-center justify-center rounded-[14px] border border-line bg-panel text-text hover:bg-panel-2" type="button" aria-label="Toggle theme" aria-pressed="false">
+        <svg class="size-5 fill-current" viewBox="0 0 24 24" aria-hidden="true">
           <path d="M12 18a6 6 0 1 1 0-12 6 6 0 0 1 0 12Zm0-16a1 1 0 0 1 1 1v1a1 1 0 1 1-2 0V3a1 1 0 0 1 1-1Zm0 18a1 1 0 0 1 1 1v1a1 1 0 1 1-2 0v-1a1 1 0 0 1 1-1ZM3 11a1 1 0 0 1 1 1 1 1 0 0 1-1 1H2a1 1 0 1 1 0-2h1Zm19 0a1 1 0 0 1 1 1 1 1 0 0 1-1 1h-1a1 1 0 1 1 0-2h1ZM4.22 4.22a1 1 0 0 1 1.42 0l.7.7a1 1 0 1 1-1.42 1.42l-.7-.7a1 1 0 0 1 0-1.42Zm13.44 13.44a1 1 0 0 1 1.42 0l.7.7a1 1 0 1 1-1.42 1.42l-.7-.7a1 1 0 0 1 0-1.42ZM19.78 4.22a1 1 0 0 1 0 1.42l-.7.7a1 1 0 1 1-1.42-1.42l.7-.7a1 1 0 0 1 1.42 0ZM6.34 17.66a1 1 0 0 1 0 1.42l-.7.7a1 1 0 1 1-1.42-1.42l.7-.7a1 1 0 0 1 1.42 0Z"/>
         </svg>
       </button>
@@ -40,45 +40,45 @@
 </header>
 
 <main id="content">
-  <section class="hero container">
-    <div class="hero-grid">
-      <div class="hero-copy">
-        <p class="kicker">Full-stack Python engineer</p>
-        <h1>Build reliable backends, integrations, and product features.</h1>
-        <p class="lead">
-          I work across Python services, APIs, data stores, and cloud infrastructure — with a focus on stability, observability, and developer experience.
+  <section class="mx-auto w-full max-w-[1100px] px-[clamp(24px,4vw,56px)] pb-3.5 pt-[54px]">
+    <div class="grid items-center gap-8 md:grid-cols-[1.25fr_0.75fr] md:gap-[50px]">
+      <div>
+        <p class="mb-3.5 inline-flex w-fit items-center gap-2.5 rounded-full border border-line bg-panel px-3 py-2 text-muted">Staff Software Engineer</p>
+        <h1 class="mb-3.5 text-[clamp(32px,4vw,54px)] font-bold leading-[1.05] tracking-[-0.03em]">Design and own the platforms products depend on.</h1>
+        <p class="text-lg text-muted">
+          Identity and authorization, subscriptions and billing, GDPR workflows — built as shared services across Python backends and AWS infrastructure, with a focus on reliability, observability, and clean integration contracts.
         </p>
-        <nav class="social-row" aria-label="Profiles">
-          <a class="pill" href="https://github.com/conformist-mw" target="_blank" rel="noopener noreferrer">
-            <span class="pill-icon" aria-hidden="true">
-              <img src="static/icons/github-svgrepo-com.svg" alt="" width="18" height="18" decoding="async">
+        <nav class="mt-[18px] flex flex-wrap gap-2.5" aria-label="Profiles">
+          <a class="inline-flex items-center gap-2.5 rounded-full border border-line bg-panel px-3 py-2.5 text-muted hover:bg-panel-2 hover:text-text" href="https://github.com/conformist-mw" target="_blank" rel="noopener noreferrer">
+            <span class="inline-flex size-8 shrink-0 items-center justify-center rounded-full bg-accent/22" aria-hidden="true">
+              <img class="size-[18px] invert opacity-[0.92] light:opacity-[0.88] light:invert-0" src="static/icons/github-svgrepo-com.svg" alt="" width="18" height="18" decoding="async">
             </span>
             GitHub
           </a>
-          <a class="pill" href="https://gitlab.com/conformist" target="_blank" rel="noopener noreferrer">
-            <span class="pill-icon" aria-hidden="true">
-              <img src="static/icons/gitlab-logo-simple-fill-svgrepo-com.svg" alt="" width="18" height="18" decoding="async">
+          <a class="inline-flex items-center gap-2.5 rounded-full border border-line bg-panel px-3 py-2.5 text-muted hover:bg-panel-2 hover:text-text" href="https://gitlab.com/conformist" target="_blank" rel="noopener noreferrer">
+            <span class="inline-flex size-8 shrink-0 items-center justify-center rounded-full bg-accent/22" aria-hidden="true">
+              <img class="size-[18px] invert opacity-[0.92] light:opacity-[0.88] light:invert-0" src="static/icons/gitlab-logo-simple-fill-svgrepo-com.svg" alt="" width="18" height="18" decoding="async">
             </span>
             GitLab
           </a>
-          <a class="pill" href="https://www.linkedin.com/in/oleg-smedyuk/" target="_blank" rel="noopener noreferrer">
-            <span class="pill-icon" aria-hidden="true">
-              <img src="static/icons/linkedin-svgrepo-com.svg" alt="" width="18" height="18" decoding="async">
+          <a class="inline-flex items-center gap-2.5 rounded-full border border-line bg-panel px-3 py-2.5 text-muted hover:bg-panel-2 hover:text-text" href="https://www.linkedin.com/in/oleg-smedyuk/" target="_blank" rel="noopener noreferrer">
+            <span class="inline-flex size-8 shrink-0 items-center justify-center rounded-full bg-accent/22" aria-hidden="true">
+              <img class="size-[18px] invert opacity-[0.92] light:opacity-[0.88] light:invert-0" src="static/icons/linkedin-svgrepo-com.svg" alt="" width="18" height="18" decoding="async">
             </span>
             LinkedIn
           </a>
-          <a class="pill" href="https://t.me/conformistmw" target="_blank" rel="noopener noreferrer">
-            <span class="pill-icon" aria-hidden="true">
-              <img src="static/icons/telegram-svgrepo-com.svg" alt="" width="18" height="18" decoding="async">
+          <a class="inline-flex items-center gap-2.5 rounded-full border border-line bg-panel px-3 py-2.5 text-muted hover:bg-panel-2 hover:text-text" href="https://t.me/conformistmw" target="_blank" rel="noopener noreferrer">
+            <span class="inline-flex size-8 shrink-0 items-center justify-center rounded-full bg-accent/22" aria-hidden="true">
+              <img class="size-[18px] invert opacity-[0.92] light:opacity-[0.88] light:invert-0" src="static/icons/telegram-svgrepo-com.svg" alt="" width="18" height="18" decoding="async">
             </span>
             Telegram
           </a>
         </nav>
       </div>
 
-      <div class="hero-photo">
-        <div class="photo-frame" aria-hidden="true"></div>
-        <picture>
+      <div class="relative w-[min(520px,100%)] justify-self-center">
+        <div class="absolute -inset-3.5 -z-10 rounded-full bg-[radial-gradient(circle_at_30%_20%,rgba(139,92,246,0.45),transparent_55%),radial-gradient(circle_at_70%_65%,rgba(34,211,238,0.35),transparent_55%)] blur-[14px]" aria-hidden="true"></div>
+        <picture class="block overflow-hidden rounded-full border border-line shadow-[0_22px_60px_-34px_var(--shadow)]">
           <source
             media="(max-width: 767px)"
             sizes="(max-width: 767px) 100vw, 520px"
@@ -96,6 +96,7 @@
               static/images/logo_w_900.webp 900w"
           >
           <img
+            class="aspect-square object-cover"
             src="static/images/logo_w_730.webp"
             alt="Portrait of Oleg Smedyuk"
             width="520"
@@ -108,87 +109,100 @@
     </div>
   </section>
 
-  <section id="highlights" class="container section">
-    <h2>Highlights</h2>
-    <div class="card-grid">
-      <article class="card">
-        <h3>Subscriptions & purchases</h3>
-        <p>Built and integrated a backend library to manage subscriptions across Google Play, Apple Store, and web.</p>
-        <ul class="tags" aria-label="Stack">
+  <section id="highlights" class="mx-auto w-full max-w-[1100px] px-[clamp(24px,4vw,56px)] py-14">
+    <h2 class="mb-5 text-[28px] font-bold tracking-[-0.02em]">Highlights</h2>
+    <div class="grid grid-cols-1 gap-3.5 md:grid-cols-3">
+      <article class="rounded-2xl border border-line bg-panel p-[18px] shadow-[0_18px_55px_-40px_var(--shadow)]">
+        <h3 class="text-lg font-bold tracking-[-0.01em]">Identity platform &amp; auth</h3>
+        <p class="mt-2.5 text-muted">Canonical user model and cross-system identity strategy, with a central auth service as the single authority for token issuance and validation.</p>
+        <ul class="mt-3.5 flex list-none flex-wrap gap-2 p-0 [&>li]:rounded-full [&>li]:border [&>li]:border-line [&>li]:bg-black/12 [&>li]:px-2.5 [&>li]:py-1.5 [&>li]:text-[13px] [&>li]:text-muted light:[&>li]:bg-white/70" aria-label="Stack">
           <li>Python</li>
           <li>Flask</li>
           <li>PostgreSQL</li>
-          <li>AWS Lambda</li>
-        </ul>
-      </article>
-      <article class="card">
-        <h3>FinTech accounting platform</h3>
-        <p>Refactored and stabilized a double-entry accounting system; unified environments and improved test speed.</p>
-        <ul class="tags" aria-label="Stack">
-          <li>Django</li>
-          <li>DRF</li>
-          <li>Celery</li>
-          <li>Plaid</li>
-          <li>Stripe</li>
-        </ul>
-      </article>
-      <article class="card">
-        <h3>Productivity & auth systems</h3>
-        <p>Delivered features for productivity tooling and a unified authorization/user data service with safe migrations.</p>
-        <ul class="tags" aria-label="Stack">
-          <li>Django</li>
-          <li>GraphQL</li>
-          <li>ElasticSearch</li>
           <li>AWS</li>
+        </ul>
+      </article>
+      <article class="rounded-2xl border border-line bg-panel p-[18px] shadow-[0_18px_55px_-40px_var(--shadow)]">
+        <h3 class="text-lg font-bold tracking-[-0.01em]">GDPR deletion orchestration</h3>
+        <p class="mt-2.5 text-muted">Company-wide erasure across internal services and third-party vendors — async workflows with retries, auditing, and verifiable completion.</p>
+        <ul class="mt-3.5 flex list-none flex-wrap gap-2 p-0 [&>li]:rounded-full [&>li]:border [&>li]:border-line [&>li]:bg-black/12 [&>li]:px-2.5 [&>li]:py-1.5 [&>li]:text-[13px] [&>li]:text-muted light:[&>li]:bg-white/70" aria-label="Stack">
+          <li>Python</li>
+          <li>AWS Lambda</li>
+          <li>SQS</li>
+          <li>EventBridge</li>
+        </ul>
+      </article>
+      <article class="rounded-2xl border border-line bg-panel p-[18px] shadow-[0_18px_55px_-40px_var(--shadow)]">
+        <h3 class="text-lg font-bold tracking-[-0.01em]">Subscriptions &amp; billing platform</h3>
+        <p class="mt-2.5 text-muted">Shared platform unifying Google Play, App Store, and web billing behind one API; integrated into the new Forge architecture.</p>
+        <ul class="mt-3.5 flex list-none flex-wrap gap-2 p-0 [&>li]:rounded-full [&>li]:border [&>li]:border-line [&>li]:bg-black/12 [&>li]:px-2.5 [&>li]:py-1.5 [&>li]:text-[13px] [&>li]:text-muted light:[&>li]:bg-white/70" aria-label="Stack">
+          <li>Python</li>
+          <li>Flask</li>
+          <li>SQLAlchemy</li>
+          <li>PostgreSQL</li>
         </ul>
       </article>
     </div>
   </section>
 
-  <section id="experience" class="container section">
-    <h2>Experience</h2>
+  <section id="experience" class="mx-auto w-full max-w-[1100px] px-[clamp(24px,4vw,56px)] py-14">
+    <h2 class="mb-5 text-[28px] font-bold tracking-[-0.02em]">Experience</h2>
 
-    <div class="timeline" role="list">
-      <article class="timeline-item" role="listitem">
-        <div class="timeline-marker">
-          <img src="static/images/welltech.png" alt="" width="40" height="40" loading="lazy" decoding="async">
+    <div class="grid gap-3.5" role="list">
+      <article class="grid grid-cols-[62px_1fr] items-start gap-3.5 rounded-2xl border border-line bg-panel p-[18px]" role="listitem">
+        <div class="grid size-12 place-items-center overflow-hidden rounded-[14px] border border-line bg-white/92 p-[7px]">
+          <img class="size-full object-contain" src="static/images/welltech.png" alt="" width="40" height="40" loading="lazy" decoding="async">
         </div>
-        <div class="timeline-content">
-          <div class="timeline-header">
-            <h3><a href="https://welltech.com/" target="_blank" rel="noopener noreferrer">Welltech</a></h3>
-            <p class="meta"><span>Backend engineer</span><span aria-hidden="true">•</span><span>Nov 2022 — Present</span></p>
+        <div>
+          <div class="flex flex-wrap items-baseline justify-between gap-3.5">
+            <h3 class="text-lg font-bold tracking-[-0.01em]"><a class="hover:underline" href="https://welltech.com/" target="_blank" rel="noopener noreferrer">Welltech</a></h3>
+            <p class="mt-2 flex flex-wrap gap-2.5 text-sm text-muted"><span>Staff Software Engineer</span><span aria-hidden="true">•</span><span>Nov 2022 — Present</span></p>
           </div>
-          <ul>
-            <li>AB test app development; internal library development for subscription and purchase management.</li>
-            <li>Integrations with Google Play / Apple Store APIs; rollout across multiple backends.</li>
+          <ul class="mt-3 list-disc pl-[18px] text-muted">
+            <li>Designed and led the implementation of the company's identity platform — a canonical user model and cross-system identity strategy for web and mobile products.</li>
+            <li>Built the centralized authentication service as the single authority for token issuance and validation, replacing duplicated authentication logic across services.</li>
+            <li>Designed and implemented the company-wide GDPR deletion orchestration service, coordinating erasure across internal services and third-party vendors with retries, auditing, and completion tracking.</li>
+            <li>Owned the shared subscriptions platform unifying Google Play, App Store, and web billing behind a common API; led its integration into the new Forge architecture with entitlement management, notification flows, and analytics.</li>
+            <li>Defined integration contracts between new and legacy platforms, enabling gradual migration — with zero-downtime migrations — without disrupting existing products or analytics.</li>
+            <li>Designed and maintained AWS infrastructure as code (CDK, CloudFormation) across Lambda, ECS, SQS, EventBridge, and API Gateway, with Datadog-based observability.</li>
+            <li>Delivered experimentation infrastructure used by product teams for feature rollouts and A/B testing.</li>
           </ul>
-          <ul class="tags" aria-label="Stack">
+          <ul class="mt-3.5 flex list-none flex-wrap gap-2 pl-[18px] [&>li]:rounded-full [&>li]:border [&>li]:border-line [&>li]:bg-black/12 [&>li]:px-2.5 [&>li]:py-1.5 [&>li]:text-[13px] [&>li]:text-muted light:[&>li]:bg-white/70" aria-label="Stack">
             <li>Python</li>
+            <li>TypeScript</li>
             <li>Flask</li>
             <li>SQLAlchemy</li>
             <li>PostgreSQL</li>
-            <li>AWS API Gateway</li>
             <li>AWS Lambda</li>
+            <li>ECS</li>
+            <li>API Gateway</li>
+            <li>SQS</li>
+            <li>EventBridge</li>
+            <li>AWS CDK</li>
+            <li>CloudFormation</li>
+            <li>GitLab CI</li>
+            <li>Datadog</li>
             <li>pytest</li>
             <li>mypy</li>
+            <li>Ruff</li>
           </ul>
         </div>
       </article>
 
-      <article class="timeline-item" role="listitem">
-        <div class="timeline-marker">
-          <img src="static/images/intive.png" alt="" width="40" height="40" loading="lazy" decoding="async">
+      <article class="grid grid-cols-[62px_1fr] items-start gap-3.5 rounded-2xl border border-line bg-panel p-[18px]" role="listitem">
+        <div class="grid size-12 place-items-center overflow-hidden rounded-[14px] border border-line bg-white/92 p-[7px]">
+          <img class="size-full object-contain" src="static/images/intive.png" alt="" width="40" height="40" loading="lazy" decoding="async">
         </div>
-        <div class="timeline-content">
-          <div class="timeline-header">
-            <h3><a href="https://intive.com/" target="_blank" rel="noopener noreferrer">Intive</a></h3>
-            <p class="meta"><span>Backend engineer</span><span aria-hidden="true">•</span><span>Oct 2021 — Nov 2022</span></p>
+        <div>
+          <div class="flex flex-wrap items-baseline justify-between gap-3.5">
+            <h3 class="text-lg font-bold tracking-[-0.01em]"><a class="hover:underline" href="https://intive.com/" target="_blank" rel="noopener noreferrer">Intive</a></h3>
+            <p class="mt-2 flex flex-wrap gap-2.5 text-sm text-muted"><span>Backend engineer</span><span aria-hidden="true">•</span><span>Oct 2021 — Nov 2022</span></p>
           </div>
-          <ul>
+          <ul class="mt-3 list-disc pl-[18px] text-muted">
             <li>Refactored a financial accounting system (double-entry) and standardized environments.</li>
             <li>Improved testing (pytest migration) and developer tooling; integrated Plaid and API docs.</li>
           </ul>
-          <ul class="tags" aria-label="Stack">
+          <ul class="mt-3.5 flex list-none flex-wrap gap-2 pl-[18px] [&>li]:rounded-full [&>li]:border [&>li]:border-line [&>li]:bg-black/12 [&>li]:px-2.5 [&>li]:py-1.5 [&>li]:text-[13px] [&>li]:text-muted light:[&>li]:bg-white/70" aria-label="Stack">
             <li>Django</li>
             <li>DRF</li>
             <li>Celery</li>
@@ -201,22 +215,22 @@
         </div>
       </article>
 
-      <article class="timeline-item" role="listitem">
-        <div class="timeline-marker">
-          <img src="static/images/ivelum.png" alt="" width="40" height="40" loading="lazy" decoding="async">
+      <article class="grid grid-cols-[62px_1fr] items-start gap-3.5 rounded-2xl border border-line bg-panel p-[18px]" role="listitem">
+        <div class="grid size-12 place-items-center overflow-hidden rounded-[14px] border border-line bg-white/92 p-[7px]">
+          <img class="size-full object-contain" src="static/images/ivelum.png" alt="" width="40" height="40" loading="lazy" decoding="async">
         </div>
-        <div class="timeline-content">
-          <div class="timeline-header">
-            <h3><a href="https://ivelum.com/" target="_blank" rel="noopener noreferrer">Ivelum</a></h3>
-            <p class="meta"><span>Full-stack engineer</span><span aria-hidden="true">•</span><span>Jan 2020 — Oct 2021</span></p>
+        <div>
+          <div class="flex flex-wrap items-baseline justify-between gap-3.5">
+            <h3 class="text-lg font-bold tracking-[-0.01em]"><a class="hover:underline" href="https://ivelum.com/" target="_blank" rel="noopener noreferrer">Ivelum</a></h3>
+            <p class="mt-2 flex flex-wrap gap-2.5 text-sm text-muted"><span>Full-stack engineer</span><span aria-hidden="true">•</span><span>Jan 2020 — Oct 2021</span></p>
           </div>
-          <ul>
+          <ul class="mt-3 list-disc pl-[18px] text-muted">
             <li>Built a developer productivity app with GitHub/Slack integrations, company calendars, and automations.</li>
             <li>Delivered an identity platform providing SSO-style auth tools across products and sites.</li>
             <li>Onboarded entire companies via SAML, OIDC, and OAuth integration flows.</li>
             <li>Worked with trunk-based development and zero-downtime migrations.</li>
           </ul>
-          <ul class="tags" aria-label="Stack">
+          <ul class="mt-3.5 flex list-none flex-wrap gap-2 pl-[18px] [&>li]:rounded-full [&>li]:border [&>li]:border-line [&>li]:bg-black/12 [&>li]:px-2.5 [&>li]:py-1.5 [&>li]:text-[13px] [&>li]:text-muted light:[&>li]:bg-white/70" aria-label="Stack">
             <li>Django</li>
             <li>Celery</li>
             <li>MySQL</li>
@@ -234,22 +248,22 @@
         </div>
       </article>
 
-      <article class="timeline-item" role="listitem">
-        <div class="timeline-marker">
-          <img src="static/images/sf.png" alt="" width="40" height="40" loading="lazy" decoding="async">
+      <article class="grid grid-cols-[62px_1fr] items-start gap-3.5 rounded-2xl border border-line bg-panel p-[18px]" role="listitem">
+        <div class="grid size-12 place-items-center overflow-hidden rounded-[14px] border border-line bg-white/92 p-[7px]">
+          <img class="size-full object-contain" src="static/images/sf.png" alt="" width="40" height="40" loading="lazy" decoding="async">
         </div>
-        <div class="timeline-content">
-          <div class="timeline-header">
-            <h3><a href="https://www.softformance.com/" target="_blank" rel="noopener noreferrer">SoftFormance</a></h3>
-            <p class="meta"><span>Full-stack engineer</span><span aria-hidden="true">•</span><span>Feb 2018 — Jan 2020</span></p>
+        <div>
+          <div class="flex flex-wrap items-baseline justify-between gap-3.5">
+            <h3 class="text-lg font-bold tracking-[-0.01em]"><a class="hover:underline" href="https://www.softformance.com/" target="_blank" rel="noopener noreferrer">SoftFormance</a></h3>
+            <p class="mt-2 flex flex-wrap gap-2.5 text-sm text-muted"><span>Full-stack engineer</span><span aria-hidden="true">•</span><span>Feb 2018 — Jan 2020</span></p>
           </div>
-          <ul>
+          <ul class="mt-3 list-disc pl-[18px] text-muted">
             <li>Built Facebook messaging automation to simulate interactive ads and reply to user messages.</li>
             <li>Delivered a crypto/affiliate platform with KYC onboarding and verification flows.</li>
             <li>Shipped a logistics app with order matching, driver pickup, and Google Maps routing.</li>
             <li>Worked across multiple Django/Celery/PostgreSQL projects plus one Flask/MongoDB stack.</li>
           </ul>
-          <ul class="tags" aria-label="Stack">
+          <ul class="mt-3.5 flex list-none flex-wrap gap-2 pl-[18px] [&>li]:rounded-full [&>li]:border [&>li]:border-line [&>li]:bg-black/12 [&>li]:px-2.5 [&>li]:py-1.5 [&>li]:text-[13px] [&>li]:text-muted light:[&>li]:bg-white/70" aria-label="Stack">
             <li>Django</li>
             <li>Celery</li>
             <li>PostgreSQL</li>
@@ -264,21 +278,21 @@
         </div>
       </article>
 
-      <article class="timeline-item" role="listitem">
-        <div class="timeline-marker">
-          <img src="static/images/devman.png" alt="" width="40" height="40" loading="lazy" decoding="async">
+      <article class="grid grid-cols-[62px_1fr] items-start gap-3.5 rounded-2xl border border-line bg-panel p-[18px]" role="listitem">
+        <div class="grid size-12 place-items-center overflow-hidden rounded-[14px] border border-line bg-white/92 p-[7px]">
+          <img class="size-full object-contain" src="static/images/devman.png" alt="" width="40" height="40" loading="lazy" decoding="async">
         </div>
-        <div class="timeline-content">
-          <div class="timeline-header">
-            <h3><a href="https://dvmn.org/" target="_blank" rel="noopener noreferrer">dvmn.org</a></h3>
-            <p class="meta"><span>Code reviewer</span><span aria-hidden="true">•</span><span>Sep 2017 — Feb 2022</span></p>
+        <div>
+          <div class="flex flex-wrap items-baseline justify-between gap-3.5">
+            <h3 class="text-lg font-bold tracking-[-0.01em]"><a class="hover:underline" href="https://dvmn.org/" target="_blank" rel="noopener noreferrer">dvmn.org</a></h3>
+            <p class="mt-2 flex flex-wrap gap-2.5 text-sm text-muted"><span>Code reviewer</span><span aria-hidden="true">•</span><span>Sep 2017 — Feb 2022</span></p>
           </div>
-          <ul>
+          <ul class="mt-3 list-disc pl-[18px] text-muted">
             <li>Reviewed a high volume of student submissions across synchronous and async lessons.</li>
             <li>Provided detailed, actionable feedback to help students choose approaches and unblock tasks.</li>
             <li>Fed back on curriculum and tasks, suggesting adjustments to improve the learning system.</li>
           </ul>
-          <ul class="tags" aria-label="Stack">
+          <ul class="mt-3.5 flex list-none flex-wrap gap-2 pl-[18px] [&>li]:rounded-full [&>li]:border [&>li]:border-line [&>li]:bg-black/12 [&>li]:px-2.5 [&>li]:py-1.5 [&>li]:text-[13px] [&>li]:text-muted light:[&>li]:bg-white/70" aria-label="Stack">
             <li>Python</li>
             <li>Teaching</li>
             <li>Code review</li>
@@ -286,22 +300,22 @@
         </div>
       </article>
 
-      <article class="timeline-item" role="listitem">
-        <div class="timeline-marker">
-          <img src="static/images/ipr.png" alt="" width="40" height="40" loading="lazy" decoding="async">
+      <article class="grid grid-cols-[62px_1fr] items-start gap-3.5 rounded-2xl border border-line bg-panel p-[18px]" role="listitem">
+        <div class="grid size-12 place-items-center overflow-hidden rounded-[14px] border border-line bg-white/92 p-[7px]">
+          <img class="size-full object-contain" src="static/images/ipr.png" alt="" width="40" height="40" loading="lazy" decoding="async">
         </div>
-        <div class="timeline-content">
-          <div class="timeline-header">
-            <h3><a href="https://i-pr.com.ua/" target="_blank" rel="noopener noreferrer">i-pr.com.ua</a></h3>
-            <p class="meta"><span>Side projects</span><span aria-hidden="true">•</span><span>May 2017</span></p>
+        <div>
+          <div class="flex flex-wrap items-baseline justify-between gap-3.5">
+            <h3 class="text-lg font-bold tracking-[-0.01em]"><a class="hover:underline" href="https://i-pr.com.ua/" target="_blank" rel="noopener noreferrer">i-pr.com.ua</a></h3>
+            <p class="mt-2 flex flex-wrap gap-2.5 text-sm text-muted"><span>Side projects</span><span aria-hidden="true">•</span><span>May 2017</span></p>
           </div>
-          <ul>
+          <ul class="mt-3 list-disc pl-[18px] text-muted">
             <li>Provisioned Linux servers for web deployments, including baseline hardening and updates.</li>
             <li>Established team tooling for PHP delivery (SFTP access, Git workflows, Redmine tracking).</li>
             <li>Optimized web and mail services for performance and deliverability.</li>
             <li>Built a Python parser for <code>asos.com</code> and integrated imports into OpenCart catalog data.</li>
           </ul>
-          <ul class="tags" aria-label="Stack">
+          <ul class="mt-3.5 flex list-none flex-wrap gap-2 pl-[18px] [&>li]:rounded-full [&>li]:border [&>li]:border-line [&>li]:bg-black/12 [&>li]:px-2.5 [&>li]:py-1.5 [&>li]:text-[13px] [&>li]:text-muted light:[&>li]:bg-white/70" aria-label="Stack">
             <li>Linux</li>
             <li>Python</li>
             <li>OpenCart</li>
@@ -311,21 +325,21 @@
         </div>
       </article>
 
-      <article class="timeline-item" role="listitem">
-        <div class="timeline-marker">
-          <img src="static/images/python.png" alt="" width="40" height="40" loading="lazy" decoding="async">
+      <article class="grid grid-cols-[62px_1fr] items-start gap-3.5 rounded-2xl border border-line bg-panel p-[18px]" role="listitem">
+        <div class="grid size-12 place-items-center overflow-hidden rounded-[14px] border border-line bg-white/92 p-[7px]">
+          <img class="size-full object-contain" src="static/images/python.png" alt="" width="40" height="40" loading="lazy" decoding="async">
         </div>
-        <div class="timeline-content">
-          <div class="timeline-header">
-            <h3>Python development</h3>
-            <p class="meta"><span>Learning & practice</span><span aria-hidden="true">•</span><span>Dec 2015 — Present</span></p>
+        <div>
+          <div class="flex flex-wrap items-baseline justify-between gap-3.5">
+            <h3 class="text-lg font-bold tracking-[-0.01em]">Python development</h3>
+            <p class="mt-2 flex flex-wrap gap-2.5 text-sm text-muted"><span>Learning &amp; practice</span><span aria-hidden="true">•</span><span>Dec 2015 — Present</span></p>
           </div>
-          <ul>
+          <ul class="mt-3 list-disc pl-[18px] text-muted">
             <li>Built small Python utilities and CLI scripts to automate repetitive work and data processing.</li>
             <li>Developed web scrapers/parsers and normalized extracted data for storage and reporting.</li>
             <li>Improved code quality through refactoring, basic testing, and type hints.</li>
           </ul>
-          <ul class="tags" aria-label="Stack">
+          <ul class="mt-3.5 flex list-none flex-wrap gap-2 pl-[18px] [&>li]:rounded-full [&>li]:border [&>li]:border-line [&>li]:bg-black/12 [&>li]:px-2.5 [&>li]:py-1.5 [&>li]:text-[13px] [&>li]:text-muted light:[&>li]:bg-white/70" aria-label="Stack">
             <li>Python</li>
             <li>Automation</li>
             <li>Parsing</li>
@@ -333,16 +347,16 @@
         </div>
       </article>
 
-      <article class="timeline-item" role="listitem">
-        <div class="timeline-marker">
-          <img src="static/images/linux.png" alt="" width="40" height="40" loading="lazy" decoding="async">
+      <article class="grid grid-cols-[62px_1fr] items-start gap-3.5 rounded-2xl border border-line bg-panel p-[18px]" role="listitem">
+        <div class="grid size-12 place-items-center overflow-hidden rounded-[14px] border border-line bg-white/92 p-[7px]">
+          <img class="size-full object-contain" src="static/images/linux.png" alt="" width="40" height="40" loading="lazy" decoding="async">
         </div>
-        <div class="timeline-content">
-          <div class="timeline-header">
-            <h3>Remote Linux system administration</h3>
-            <p class="meta"><span>Freelance</span><span aria-hidden="true">•</span><span>Apr 2013</span></p>
+        <div>
+          <div class="flex flex-wrap items-baseline justify-between gap-3.5">
+            <h3 class="text-lg font-bold tracking-[-0.01em]">Remote Linux system administration</h3>
+            <p class="mt-2 flex flex-wrap gap-2.5 text-sm text-muted"><span>Freelance</span><span aria-hidden="true">•</span><span>Apr 2013</span></p>
           </div>
-          <ul>
+          <ul class="mt-3 list-disc pl-[18px] text-muted">
             <li>Administered multiple Linux servers hosting several websites each.</li>
             <li>Provisioning and configuring servers, web services (Apache, Nginx), and databases (MySQL).</li>
             <li>Managing domains and DNS; deploying new sites and updates.</li>
@@ -350,7 +364,7 @@
             <li>Supporting production systems: troubleshooting, configuration fixes, and performance tuning.</li>
             <li>Handling security issues: patching, access hardening, and anti-spam/anti-malware measures.</li>
           </ul>
-          <ul class="tags" aria-label="Stack">
+          <ul class="mt-3.5 flex list-none flex-wrap gap-2 pl-[18px] [&>li]:rounded-full [&>li]:border [&>li]:border-line [&>li]:bg-black/12 [&>li]:px-2.5 [&>li]:py-1.5 [&>li]:text-[13px] [&>li]:text-muted light:[&>li]:bg-white/70" aria-label="Stack">
             <li>Linux</li>
             <li>Apache</li>
             <li>Nginx</li>
@@ -359,19 +373,19 @@
         </div>
       </article>
 
-      <article class="timeline-item" role="listitem">
-        <div class="timeline-marker">
-          <img src="static/images/html-css.png" alt="" width="40" height="40" loading="lazy" decoding="async">
+      <article class="grid grid-cols-[62px_1fr] items-start gap-3.5 rounded-2xl border border-line bg-panel p-[18px]" role="listitem">
+        <div class="grid size-12 place-items-center overflow-hidden rounded-[14px] border border-line bg-white/92 p-[7px]">
+          <img class="size-full object-contain" src="static/images/html-css.png" alt="" width="40" height="40" loading="lazy" decoding="async">
         </div>
-        <div class="timeline-content">
-          <div class="timeline-header">
-            <h3>Frontend development</h3>
-            <p class="meta"><span>HTML/CSS</span><span aria-hidden="true">•</span><span>Jul 2012</span></p>
+        <div>
+          <div class="flex flex-wrap items-baseline justify-between gap-3.5">
+            <h3 class="text-lg font-bold tracking-[-0.01em]">Frontend development</h3>
+            <p class="mt-2 flex flex-wrap gap-2.5 text-sm text-muted"><span>HTML/CSS</span><span aria-hidden="true">•</span><span>Jul 2012</span></p>
           </div>
-          <ul>
+          <ul class="mt-3 list-disc pl-[18px] text-muted">
             <li>Built pages from PSD designs using HTML5 and CSS3.</li>
           </ul>
-          <ul class="tags" aria-label="Stack">
+          <ul class="mt-3.5 flex list-none flex-wrap gap-2 pl-[18px] [&>li]:rounded-full [&>li]:border [&>li]:border-line [&>li]:bg-black/12 [&>li]:px-2.5 [&>li]:py-1.5 [&>li]:text-[13px] [&>li]:text-muted light:[&>li]:bg-white/70" aria-label="Stack">
             <li>HTML5</li>
             <li>CSS3</li>
           </ul>
@@ -380,12 +394,12 @@
     </div>
   </section>
 
-  <section id="skills" class="container section">
-    <h2>Skills</h2>
-    <div class="split">
-      <div class="panel">
-        <h3>Backend</h3>
-        <ul class="chip-list">
+  <section id="skills" class="mx-auto w-full max-w-[1100px] px-[clamp(24px,4vw,56px)] py-14">
+    <h2 class="mb-5 text-[28px] font-bold tracking-[-0.02em]">Skills</h2>
+    <div class="grid grid-cols-1 gap-3.5 md:grid-cols-3">
+      <div class="rounded-2xl border border-line bg-panel p-[18px]">
+        <h3 class="mb-3 text-lg font-bold tracking-[-0.01em]">Backend</h3>
+        <ul class="flex list-none flex-wrap gap-2.5 p-0 [&>li]:rounded-full [&>li]:border [&>li]:border-line [&>li]:bg-black/12 [&>li]:px-3 [&>li]:py-[9px] [&>li]:text-sm [&>li]:font-semibold [&>li]:text-muted light:[&>li]:bg-white/70">
           <li>Python</li>
           <li>Django</li>
           <li>Flask</li>
@@ -395,48 +409,54 @@
           <li>GraphQL</li>
         </ul>
       </div>
-      <div class="panel">
-        <h3>Data & infra</h3>
-        <ul class="chip-list">
+      <div class="rounded-2xl border border-line bg-panel p-[18px]">
+        <h3 class="mb-3 text-lg font-bold tracking-[-0.01em]">Data &amp; infra</h3>
+        <ul class="flex list-none flex-wrap gap-2.5 p-0 [&>li]:rounded-full [&>li]:border [&>li]:border-line [&>li]:bg-black/12 [&>li]:px-3 [&>li]:py-[9px] [&>li]:text-sm [&>li]:font-semibold [&>li]:text-muted light:[&>li]:bg-white/70">
           <li>PostgreSQL</li>
           <li>MySQL</li>
           <li>Redis</li>
           <li>RabbitMQ</li>
           <li>ElasticSearch</li>
-          <li>AWS</li>
+          <li>AWS Lambda</li>
+          <li>ECS</li>
+          <li>SQS</li>
+          <li>EventBridge</li>
+          <li>AWS CDK</li>
           <li>Docker</li>
         </ul>
       </div>
-      <div class="panel">
-        <h3>Frontend & tools</h3>
-        <ul class="chip-list">
+      <div class="rounded-2xl border border-line bg-panel p-[18px]">
+        <h3 class="mb-3 text-lg font-bold tracking-[-0.01em]">Frontend &amp; tools</h3>
+        <ul class="flex list-none flex-wrap gap-2.5 p-0 [&>li]:rounded-full [&>li]:border [&>li]:border-line [&>li]:bg-black/12 [&>li]:px-3 [&>li]:py-[9px] [&>li]:text-sm [&>li]:font-semibold [&>li]:text-muted light:[&>li]:bg-white/70">
           <li>React</li>
           <li>Vue</li>
           <li>TypeScript</li>
           <li>Webpack</li>
           <li>pytest</li>
           <li>mypy</li>
+          <li>Ruff</li>
+          <li>Datadog</li>
           <li>CI/CD</li>
         </ul>
       </div>
     </div>
   </section>
 
-  <section id="contact" class="container section">
-    <h2>Contact</h2>
-    <div class="contact-card">
-      <p class="lead">Best way to reach me: <a href="mailto:oleg.smedyuk@gmail.com">oleg.smedyuk@gmail.com</a></p>
-      <div class="contact-links">
-        <a class="btn btn-primary" href="mailto:oleg.smedyuk@gmail.com">Email</a>
-        <a class="btn btn-ghost" href="https://www.linkedin.com/in/oleg-smedyuk/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-        <a class="btn btn-ghost" href="https://github.com/conformist-mw" target="_blank" rel="noopener noreferrer">GitHub</a>
+  <section id="contact" class="mx-auto w-full max-w-[1100px] px-[clamp(24px,4vw,56px)] py-14">
+    <h2 class="mb-5 text-[28px] font-bold tracking-[-0.02em]">Contact</h2>
+    <div class="rounded-2xl border border-line bg-panel p-[18px]">
+      <p class="mb-4 text-lg text-muted">Best way to reach me: <a class="underline" href="mailto:oleg.smedyuk@gmail.com">oleg.smedyuk@gmail.com</a></p>
+      <div class="flex flex-wrap gap-2.5">
+        <a class="inline-flex cursor-pointer items-center justify-center gap-2.5 rounded-[14px] bg-linear-to-br from-accent to-accent-2 px-3.5 py-[11px] font-[650] tracking-[0.2px] text-white/95 shadow-[0_10px_30px_-18px_var(--shadow)] hover:brightness-105" href="mailto:oleg.smedyuk@gmail.com">Email</a>
+        <a class="inline-flex cursor-pointer items-center justify-center gap-2.5 rounded-[14px] border border-line bg-transparent px-3.5 py-[11px] font-[650] tracking-[0.2px] shadow-[0_10px_30px_-18px_var(--shadow)] hover:bg-panel-2" href="https://www.linkedin.com/in/oleg-smedyuk/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        <a class="inline-flex cursor-pointer items-center justify-center gap-2.5 rounded-[14px] border border-line bg-transparent px-3.5 py-[11px] font-[650] tracking-[0.2px] shadow-[0_10px_30px_-18px_var(--shadow)] hover:bg-panel-2" href="https://github.com/conformist-mw" target="_blank" rel="noopener noreferrer">GitHub</a>
       </div>
     </div>
   </section>
 </main>
 
-<footer class="site-footer">
-  <div class="container">
+<footer class="mt-[30px] border-t border-line pb-[50px] pt-[34px] text-muted">
+  <div class="mx-auto w-full max-w-[1100px] px-[clamp(24px,4vw,56px)]">
     <p>© <span id="year"></span> Oleg Smedyuk</p>
   </div>
 </footer>
