@@ -5,3 +5,4 @@ blog/public
 blog/resources/_gen
 blog/.hugo_build.lock
 blog/themes/LoveIt
+node_modules

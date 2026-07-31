@@ -1,0 +1,19 @@
+{
+  "name": "conformist-mw",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Landing page + blog sources for conformist-mw.github.io",
+  "scripts": {
+    "css": "tailwindcss -i src/input.css -o static/css/tailwind.css --minify",
+    "css:watch": "tailwindcss -i src/input.css -o static/css/tailwind.css --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/conformist-mw/conformist-mw.git"
+  },
+  "license": "ISC",
+  "devDependencies": {
+    "@tailwindcss/cli": "^4.3.3",
+    "tailwindcss": "^4.3.3"
+  }
+}
