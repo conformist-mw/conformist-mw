@@ -1,3 +1,7 @@
+/* Источник для static/css/tailwind.css. После правки классов в index.html
+   пересобрать: `npm run css` (или `npm run css:watch`). Скомпилированный файл
+   закоммичен — в CI нет шага сборки, деплой просто копирует файлы. */
+
 @import "tailwindcss";
 
 /* Тема переключается атрибутом data-theme на <html> (см. скрипт в index.html),
